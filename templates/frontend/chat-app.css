@@ -1,0 +1,96 @@
+/*<style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,400&display=swap'); </style>
+*/
+/*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 97vh;
+  background: linear-gradient(
+    #009688 0%,
+    #009688 130px,
+    #d9dbd5 130px,
+    #d9dbd5 100%
+  );
+}
+.container {
+  position: relative;
+  width: 1396px;
+  max-width: 100%;
+  height: calc(100vh - 50px);
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0, 06), 0 2px 5px 0 rgba(0, 0, 0, 0, 06);
+  display: flex;
+  border-radius: 15px;
+}
+.container .leftSide {
+  position: relative;
+  flex: 30%;
+  background: #fff;
+  border-radius: 15px;
+}
+.container .rightSide {
+  position: relative;
+  flex: 70%;
+  background: #e5ddd5;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
+  border-left: 1px solid black;
+}
+.container .rightSide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../image/background.png);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.315);
+}
+.userimg {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nav_icons {
+  display: flex;
+  margin-right:40px ;
+}
+.nav_icons li {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  color: #51585c;
+  font-size: 1.5em;
+  margin-left: 22px;
+}
